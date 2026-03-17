@@ -729,6 +729,7 @@ address { font-style: normal; }
   display: flex;
   gap: 0.4rem;
   flex-wrap: wrap;
+  flex: 1;
 }
 .filter-btn {
   padding: 0.3rem 0.85rem;
