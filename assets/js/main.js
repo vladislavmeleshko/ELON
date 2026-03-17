@@ -122,16 +122,19 @@ function initPortfolioFilter() {
   const cards      = Array.from(grid.querySelectorAll('.project-card'));
   const typeBtns   = document.querySelectorAll('[data-type]');
   const cityBtns   = document.querySelectorAll('[data-city]');
+  const clientBtns = document.querySelectorAll('[data-client]');
 
-  let activeType = 'all';
-  let activeCity = 'all';
+  let activeType   = 'all';
+  let activeCity   = 'all';
+  let activeClient = 'all';
 
   function applyFilters() {
     let visible = 0;
     cards.forEach(card => {
-      const typeMatch = activeType === 'all' || card.dataset.type === activeType;
-      const cityMatch = activeCity === 'all' || card.dataset.city === activeCity;
-      const show = typeMatch && cityMatch;
+      const typeMatch   = activeType   === 'all' || card.dataset.type   === activeType;
+      const cityMatch   = activeCity   === 'all' || card.dataset.city   === activeCity;
+      const clientMatch = activeClient === 'all' || card.dataset.client === activeClient;
+      const show = typeMatch && cityMatch && clientMatch;
       card.classList.toggle('is-hidden', !show);
       if (show) visible++;
     });
@@ -167,6 +170,14 @@ function initPortfolioFilter() {
     btn.addEventListener('click', () => {
       activeCity = btn.dataset.city;
       setActive(cityBtns, activeCity);
+      applyFilters();
+    });
+  });
+
+  clientBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeClient = btn.dataset.client;
+      setActive(clientBtns, activeClient);
       applyFilters();
     });
   });
