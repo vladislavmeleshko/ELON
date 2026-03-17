@@ -398,12 +398,24 @@
               <button class="filter-btn" data-city="krichev">Кричев</button>
             </div>
           </div>
+          <div class="filter-row">
+            <span class="filter-label">Заказчик:</span>
+            <div class="filter-group" role="group" aria-label="Фильтр по заказчику">
+              <button class="filter-btn is-active" data-client="all">Все</button>
+              <button class="filter-btn" data-client="riverside">ООО «Риверсайд Девелопмент»</button>
+              <button class="filter-btn" data-client="uks-mogilev">ГП «УКС г. Могилева»</button>
+              <button class="filter-btn" data-client="biussi">ИООО «БиЮСиСи»</button>
+              <button class="filter-btn" data-client="grandhauz">ООО «ГрандХаузИнжениринг»</button>
+              <button class="filter-btn" data-client="vodokanal">«Могилевоблводоканал»</button>
+              <button class="filter-btn" data-client="myasokombinat">ОАО «Мясокомбинат»</button>
+            </div>
+          </div>
         </div>
 
         <div class="portfolio__grid" id="portfolioGrid">
 
           <!-- 1 -->
-          <article class="project-card reveal" data-type="residential" data-city="minsk">
+          <article class="project-card reveal" data-type="residential" data-city="minsk" data-client="biussi">
             <div class="project-card__img">
               <img
                 src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop&q=80"
@@ -424,7 +436,7 @@
           </article>
 
           <!-- 2 -->
-          <article class="project-card reveal" data-type="parking" data-city="minsk">
+          <article class="project-card reveal" data-type="parking" data-city="minsk" data-client="grandhauz">
             <div class="project-card__img">
               <img
                 src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop&q=80"
@@ -445,7 +457,7 @@
           </article>
 
           <!-- 3 -->
-          <article class="project-card reveal" data-type="residential" data-city="mogilev">
+          <article class="project-card reveal" data-type="residential" data-city="mogilev" data-client="uks-mogilev">
             <div class="project-card__img">
               <img
                 src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop&q=80"
@@ -466,7 +478,7 @@
           </article>
 
           <!-- 4 -->
-          <article class="project-card reveal" data-type="residential" data-city="minsk">
+          <article class="project-card reveal" data-type="residential" data-city="minsk" data-client="riverside">
             <div class="project-card__img">
               <img
                 src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop&q=80"
@@ -487,7 +499,7 @@
           </article>
 
           <!-- 5 -->
-          <article class="project-card reveal" data-type="residential" data-city="minsk">
+          <article class="project-card reveal" data-type="residential" data-city="minsk" data-client="riverside">
             <div class="project-card__img">
               <img
                 src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop&q=80"
@@ -508,7 +520,7 @@
           </article>
 
           <!-- 6 -->
-          <article class="project-card reveal" data-type="infrastructure" data-city="krichev">
+          <article class="project-card reveal" data-type="infrastructure" data-city="krichev" data-client="vodokanal">
             <div class="project-card__img">
               <img
                 src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop&q=80"
@@ -529,7 +541,7 @@
           </article>
 
           <!-- 7 -->
-          <article class="project-card reveal" data-type="residential" data-city="minsk">
+          <article class="project-card reveal" data-type="residential" data-city="minsk" data-client="riverside">
             <div class="project-card__img">
               <img
                 src="https://prometr.by/upload/medialibrary/7d7/7d75d2051803523e96ffad2909b88885.jpg"
@@ -550,7 +562,7 @@
           </article>
 
           <!-- 8 -->
-          <article class="project-card reveal" data-type="residential" data-city="mogilev">
+          <article class="project-card reveal" data-type="residential" data-city="mogilev" data-client="uks-mogilev">
             <div class="project-card__img">
               <img
                 src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop&q=80"
@@ -571,7 +583,7 @@
           </article>
 
           <!-- 9 -->
-          <article class="project-card reveal" data-type="industrial" data-city="mogilev">
+          <article class="project-card reveal" data-type="industrial" data-city="mogilev" data-client="myasokombinat">
             <div class="project-card__img">
               <img
                 src="https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop&q=80"
@@ -592,7 +604,7 @@
           </article>
 
           <!-- 10 -->
-          <article class="project-card reveal" data-type="parking" data-city="minsk">
+          <article class="project-card reveal" data-type="parking" data-city="minsk" data-client="riverside">
             <div class="project-card__img">
               <img
                 src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop&q=80"
@@ -613,7 +625,7 @@
           </article>
 
           <!-- 11 -->
-          <article class="project-card reveal" data-type="residential" data-city="minsk">
+          <article class="project-card reveal" data-type="residential" data-city="minsk" data-client="riverside">
             <div class="project-card__img">
               <img
                 src="https://img.zerkalo.io/720x720s/05/b/minsk_severnyy_bereg_2024_3.jpg"
@@ -634,7 +646,7 @@
           </article>
 
           <!-- 12 -->
-          <article class="project-card reveal" data-type="residential" data-city="minsk">
+          <article class="project-card reveal" data-type="residential" data-city="minsk" data-client="riverside">
             <div class="project-card__img">
               <img
                 src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop&q=80"
