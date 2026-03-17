@@ -1059,6 +1059,13 @@ address { font-style: normal; }
   letter-spacing: 0.04em;
   color: var(--c-gold);
   text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--dur), border-color var(--dur);
+}
+.client-card__projects:hover {
+  background: var(--c-gold-dim);
+  border-color: var(--c-gold);
 }
 
 /* ─── CONTACTS ────────────────────────────────────────────────── */

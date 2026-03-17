@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initScrollReveal();
   initPortfolioFilter();
+  initClientCardLinks();
   initCounters();
   initBackToTop();
   initContactForm();
@@ -317,6 +318,17 @@ function initContactForm() {
         </div>
       `;
     }, 1200);
+  });
+}
+
+/* ─── Client card → portfolio filter links ───────────────────── */
+function initClientCardLinks() {
+  document.querySelectorAll('[data-filter-client]').forEach(link => {
+    link.addEventListener('click', () => {
+      const clientValue = link.dataset.filterClient;
+      const filterBtn = document.querySelector(`.filter-btn[data-client="${clientValue}"]`);
+      if (filterBtn) filterBtn.click();
+    });
   });
 }
 
